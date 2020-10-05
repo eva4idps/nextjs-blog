@@ -8,7 +8,6 @@ export const name = 'Alex'
 export const siteTitle = 'Next.js Sample Website'
 
 function Layout({ children, home }) {
-  console.log('home', home)
   return (
     <div className={styles.container}>
       <Head>
@@ -36,7 +35,7 @@ function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
+            <Link href="/posts/first-post/">
               <a>
                 <img
                   src="/images/profile.jpg"
